@@ -6,12 +6,7 @@ import { connectDB } from "./lib/db.js";
 const app = express();
 const PORT = 8080;
 app.use(express.json());
-app.use(
-  cors({
-    origin: "http://localhost:3000",
-    methods: ["GET", "POST", "DELETE"],
-  })
-);
+app.use(cors());
 app.get("/api/bookings", async (req, res) => {
   try {
     const bookings = await Booking.find();
