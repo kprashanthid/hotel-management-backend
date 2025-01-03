@@ -1,0 +1,47 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Environment files
+.env
+.env.*  # Ignore all environment files (e.g., .env.local, .env.production)
+
+# Logs
+logs/
+*.log
+*.log.*
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# Build files
+dist/
+build/
+
+# Dependency directories
+coverage/
+*.tgz
+
+# Temporary files
+tmp/
+*.swp
+*.swo
+
+# Docker-related files
+.docker/
+docker-compose.override.yml
+
+# package-lock.json or yarn.lock if you use a different package manager
+# package-lock.json
+# yarn.lock
+
+# Other files to ignore (customize as needed)
+*.bak
+*.tmp
